@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+html, body {
+  background-color: #222;
+  color: #eee;
+}
+
+h1, h2, h3, h4 {
+  padding: 1rem;
+}
+
+body {
+  margin: 1rem;
+}
+
+legend {
+  text-decoration: underline;
+}
+
+fieldset {
+  border: none;
+}
+
+form {
+  margin: 1rem 0rem;
+}
+
+button, input[type = 'submit'] {
+  cursor: pointer;
+}
+
+#btn-submit, #btn-ganador, #name, label, legend {
+  padding: 6px;
+}
+
+#btn-submit, #btn-ganador {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 4px; /* Ajusta este valor según tus necesidades */
+}
+
+/* Estilo básico para la presentación */
+table, th, td {
+  padding: 6px;
+}
+
+th {
+  border: 1px solid black;
+  background-color: #444;
+}
+
+td {
+  border: 1px solid black;
+  background-color: #666;
+}
+
+tr > td:first-child {
+  text-align: end;
+}
+
+#btn-ganador, #btn-submit {
+  background-color: #c6852a;
+  border: 2px solid #422a0f;
+  border-radius: 0.5rem;
+  transition: background-color .3s ease;
+}
+
+#btn-ganador:hover, #btn-submit:hover {
+  background-color: #f6be26;
+}
+
+#winnerPlayer {
+  padding: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #f6be26;
+}

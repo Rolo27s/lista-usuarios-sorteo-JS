@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>lista-usuarios-sorteo</title>
+</head>
+<body>
+  <h2>¿Quieres participar como voluntario en la clase?</h2>
+  <h3>Clase de <strong class="topic">(... título de la clase...)</strong></h3>
+  <h4><b class="day">Día de la clase</b> | <b class="time">Hora de la clase</b></h3>
+  <form action="">
+    <fieldset>
+      <legend>Inscripción</legend>
+      <label for="name">Tu nick para el sorteo</label>
+      <input type="text" name="name" id="name" required>
+      <input type="submit" value="Me apunto!" id="btn-submit">
+    </fieldset>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Nº inscripción</th>
+        <th>Nombre</th>
+      </tr>
+    </thead>
+    <tbody id="player-container">
+      <!-- Aquí se irán agregando dinámicamente los jugadores -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2"><button id="btn-ganador">Sorteo !!!</button></th>
+      </tr>
+      <tr>
+        <th id="winner" colspan="2"><!-- Aparecerá dinámicamente el ganador del sorteo --></th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+<script src="code.js"></script>
+</html>
